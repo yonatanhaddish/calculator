@@ -5,7 +5,7 @@ function App() {
   const [result, setResult]= useState("");
 
   const handleClick = (e) => {
-    console.log(result.concat(e.target.name));
+    // console.log(result.concat(e.target.name));
     setResult(result.concat(e.target.name));
   };
   
@@ -13,9 +13,20 @@ function App() {
     setResult("");
   };
 
-  const backspace= () => {
-    console.log("backspace");
-  }
+  const backspace = () => {
+    // console.log(result.slice(0, result.length-1))
+    setResult(result.slice(0, result.length-1));
+  };
+
+  const calculate = ()  => {
+    try {
+      setResult(eval(result).toString());
+      
+    }
+    catch(err) {
+      setResult("Error")
+    }
+  };
 
   return (
       <div className="container">
@@ -40,7 +51,7 @@ function App() {
           <button name="+" onClick={handleClick} className="highlight">+</button>
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
-          <button name="=" onClick={handleClick} className="highlight" id="result">=</button>
+          <button name="=" onClick={calculate} className="highlight" id="result">=</button>
         </div>
       </div>
   );
