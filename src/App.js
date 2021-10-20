@@ -1,8 +1,15 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './App.css';
 
 function App() {
+
+  const [title, setTitle]= useState("Calculator");
+
   const [result, setResult]= useState("");
+
+  useEffect(() => {
+    document.title= title;
+  }, [title]);
 
   const handleClick = (e) => {
     // console.log(result.concat(e.target.name));
