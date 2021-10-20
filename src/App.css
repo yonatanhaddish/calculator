@@ -33,5 +33,7 @@ body {
 input[type="text"] {
   height: 75px;
   width: 249px;
-  background-color: #101116;
+  background-color: #10111600;
+  border: 0px;
+  color: #ffffff;
 }
