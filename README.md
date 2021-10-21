@@ -28,3 +28,5 @@ If you have any questions about this project, please contact me directly at yoni
 
 ## Link
 https://yonatanhaddish.github.io/calculator/
+
+<img width="960" alt="calculator" src="https://user-images.githubusercontent.com/78513952/138323289-d64f6cd7-8d24-45ed-8c48-fa2d70ce8aa1.png">
