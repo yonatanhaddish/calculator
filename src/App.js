@@ -36,6 +36,8 @@ function App() {
   };
 
   return (
+    <div>
+    <div><h1>Calculator</h1></div>
       <div className="container">
         <form>
           <input type="text" value={result}></input>
@@ -60,6 +62,7 @@ function App() {
           <button name="." onClick={handleClick}>.</button>
           <button name="=" onClick={calculate} className="highlight" id="result">=</button>
         </div>
+      </div>
       </div>
   );
 }

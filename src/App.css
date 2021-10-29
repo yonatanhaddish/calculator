@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: grey;
+  background-color: rgb(92, 90, 90);
 }
 
 .container {
@@ -23,6 +23,11 @@ body {
   border: 10px solid #101116;
   background: #101116;
   border-radius: 5px;
+}
+
+h1 {
+  color: wheat;
+  font-size: 60px;
 }
 
 .keypad {
